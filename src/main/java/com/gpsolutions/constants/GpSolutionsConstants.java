@@ -14,4 +14,7 @@ public class GpSolutionsConstants {
     public static final String AMENITIES_API = "/amenities";
     public static final String SEARCH_API = "/search";
     public static final String HISTOGRAM_API = "/histogram";
+
+    public static final String NOT_NULL_MESSAGE_PROPERTY = "{validation.constraints.NotNull.message}";
+    public static final String EMAIL_MESSAGE_PROPERTY = "{validation.constraints.Email.message}";
 }

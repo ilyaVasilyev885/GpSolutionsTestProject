@@ -8,6 +8,8 @@ import lombok.Data;
 
 import java.util.List;
 
+import static com.gpsolutions.constants.GpSolutionsConstants.NOT_NULL_MESSAGE_PROPERTY;
+
 @Data
 @JsonIgnoreProperties(ignoreUnknown=true)
 @JsonInclude(JsonInclude.Include.NON_NULL)
@@ -15,23 +17,23 @@ public class HotelDTO {
 
     private Long id;
 
-    @NotNull(message = "name" + " {validation.constraints.NotNull.message}")
+    @NotNull(message = "name " + NOT_NULL_MESSAGE_PROPERTY)
     private String name;
 
-    @NotNull(message = "brand" + " {validation.constraints.NotNull.message}")
+    @NotNull(message = "brand " + NOT_NULL_MESSAGE_PROPERTY)
     private String brand;
 
     private String description;
 
-    @NotNull(message = "address" + " {validation.constraints.NotNull.message}")
+    @NotNull(message = "address " + NOT_NULL_MESSAGE_PROPERTY)
     @Valid
     private AddressDTO address;
 
-    @NotNull(message = "contacts" + " {validation.constraints.NotNull.message}")
+    @NotNull(message = "contacts " + NOT_NULL_MESSAGE_PROPERTY)
     @Valid
     private ContactDTO contacts;
 
-    @NotNull(message = "arrivalTime" + " {validation.constraints.NotNull.message}")
+    @NotNull(message = "arrivalTime " + NOT_NULL_MESSAGE_PROPERTY)
     @Valid
     private ArrivalTimeDTO arrivalTime;
 
